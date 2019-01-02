@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funny Web Jokes</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,800" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#corn-target">Corndog</a>
+  <a href="#f-target">Fight Club</a>
+  <a href="#cans-target">Singing Cans</a>
+  <a href="#mon-target">Computer Monkey</a>
+  <a href="#d-target">Dracula</a>
+  <a href="#fal-target">Falcon</a>
+  <a href="#rac-target">Raccoon</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top
+  </button>
+
+<header>
+  <div class="content-wrap">
+    <a href="home"></a>
+    <a name="home"></a>
+    <h1>Funny Web Jokes</h1>
+  </div>
+</header>
+
+<section class="footer">
+<div class="content-wrap">
+  <a>Curated by Rex Cameron.
+  Just some jokes I found online.
+  </a>
+</div>
+</section>
+
+<section class="primary" id="corndog">
+  <div class="content-wrap">
+    <a name="corn-target"></a>
+    <h2>Corndog</h2>
+  <p>Hell hath no fury like a hot dog corned.</p>
+    <br>
+    <img src="images/corndog_main.jpg" alt="Corndog">
+  <div><a href="https://twitter.com/CorndogFact">Corndog Facts</a>
+    </div>
+  </div>
+</section>
+
+<section class="secondary" id="fightclub">
+  <div class="content-wrap">
+    <a name="f-target"></a>
+    <h2>Fight Club</h2>
+      <p>[2 men standing in an empty basement together] Man 1: Alright, maybe we should tell a few people about Fight Club.</p>
+    <br>
+    <img src="images/twofighting.jpg" atl="2 guys about to fight.">
+  </div>
+</section>
+
+<section class="primary" id="cans">
+  <div class="content-wrap">
+   <a name="cans-target"></a>
+   <h2>Singing Cans</h2>
+     <p>GALILEO! -Galileo! -GALILEO! -Galileo -Galileo Fígaro! -MAGNFICO OOOH OOH OOH -NO, NO, NO, NO, NO, NO, NO!</p>
+     <br>
+     <img class="larger" src="images/ScreamingCans.jpg" alt="Screaming Cans with Googly Eyes.">
+  </div>
+</section>
+
+<section class="secondary" id="monkey">
+  <div class="content-wrap">
+    <a name="mon-target"></a>
+    <h2>Computer Monkey</h2>
+    <p>I wonder, how many bananas is too many bananas?</p>
+    <br>
+    <img src="images/monkey.jpg" alt="Monkey at a Computer">
+  </div>
+</section>
+
+<section class="primary" id="dracula">
+  <div class="content-wrap">
+    <a name="d-target"></a>
+    <h2>Dracula</h2>
+    <p>What if when Dracula's fangs came out they made that truck backing up noise?</p>
+    <br>
+    <img src="images/Dracula.jpg" atl="Dracula">
+  </div>
+</section>
+
+<section class="secondary" id="falcon">
+  <div class="content-wrap">
+    <a name="fal-target"></a>
+    <h2>Falcon</h2>
+    <p>GUY: What does it eat? <br>
+        ME: [falcon perched on shoulder] Updog<br>
+        *falcon starts break dancing* <br>
+        ME: Not yet Tyler, wait until he asks what it is</p>
+    <br>
+    <img class="larger" src="images/falcon2.jpg" atl="Falcon.">
+  </div>
+</section>
+    
+<section class="primary" id="raccoon">
+  <div class="content-wrap">
+    <a name="rac-target"></a>
+    <h2>Raccoon</h2>
+    <p>Wife: Why is your back all scratched up? <br> [flashback to me chasing a raccoon after she told me to leave it alone] <br> Me: I'm having an affair</p>
+    <img src="images/raccoon3.jpg" atl="Happy Raccoon">
+  </div>
+</section>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
